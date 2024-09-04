@@ -1,0 +1,318 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+  }
+  
+  .sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #283345;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px 20px 15px;
+    box-sizing: border-box;
+    position: fixed;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    border: 0.2px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff0e;
+    height: 55px;
+    
+  }
+  
+#sidebar-logo {
+    width: 40px;
+    padding: 10px;
+}
+
+#dropdown-arrow {
+    width: 7px;
+    margin-left: 50px;
+
+}
+
+#workspace {
+    font-size: 8px;
+    font-weight: lighter;
+    padding: 5px 5px 1px 1px;
+    text-align: left;
+    margin: 1px;
+}
+
+#theoflow-text {
+    padding: 2px;
+    margin: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+}
+
+  .product-name {
+    font-size: 9px;
+    font-weight: bold;
+    padding-left: 10px;
+
+  }
+  
+  .nav {
+    flex-grow: 1;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+    transition: transform 0.6s ease;
+  }
+  
+  .nav-link:hover {
+    transform: scale(101%);
+    background-color: #ffffff0e;
+    border-radius: 5px;
+  }
+  
+  .nav-link.active {
+    background-color: #ffffff0e;
+    border-radius: 5px;
+  }
+
+  
+  .icon {
+    margin-right: 15px;
+    font-size: 18px;
+    margin-left: 30px;
+    width: 30px;
+  }
+  
+  .support, .logout {
+    margin-top: auto;
+  }
+  
+  .logout .nav-link {
+    color: #ffffff;
+  }
+  
+  .sidebar-header:hover {
+    transition: background 0.3s;
+    background-color: #283345;
+  }
+
+  
+  #line {
+    border-bottom: 0.1px solid rgb(243, 243, 243);
+    margin-top: 20px;
+    width: 4000px;
+  }
+
+  #openModalBtn {
+    padding: 11px 30px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 12px;
+    border: 0.5px solid #ca6be5;
+    color: #ca6be5;
+    font-weight: bold;
+  }
+
+
+#openModalBtn:hover {
+    transition: background 0.5s;
+    background-color: #ca80de29;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+  .header-content {
+    font-size: 10px;
+    width: 1140px;
+    background-color: #FFFFFF;
+    margin: 0 0 0 300px;
+    padding: 35px 35px 35px 45px;
+    text-align: center;
+    border-bottom: 0.2px solid #b5b5b5;
+    color: #040404;
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.btn-header {
+    display: inline-block;
+    margin: 0 50px 0 300px;
+    width: 200px; 
+  }
+
+
+  /* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    transition: background 0.7s;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    border-radius: 12px; /* Rounded corners */
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    transition: background 0.5s;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 12px;
+    border: 0.5px solid #283345;
+    color: #283345;
+}
+
+button:hover {
+    transition: background 0.5s;
+    background-color: #28334550;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    border-radius: 12px;
+    border: 0.5px solid rgb(208, 208, 208);
+
+}
+
+.submit-btn {
+    margin: 10px 30px;
+    
+}
+
+#btn-popup {
+    width: 325px;
+    height: 40px;
+    background-color: #ca6be5;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+}
+
+#btn-popup:hover {
+    background-color: #974fab;
+    
+}
+
+/* Styling the placeholder text */
+input::placeholder {
+    font-size: 12px; /* Set the font size to make it smaller */
+    color: #999; /* Optional: Change the color of the placeholder text */
+    opacity: 1; /* Optional: Make sure the color applies properly in some browsers */
+}
+
+
+.pipelineBox {
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+  margin-top: 34px;
+  margin-left: 350px;
+  text-align: start;
+}
+
+.pipeline {
+  position: relative;               /* Allows absolute positioning for child elements */
+  height: 575px;
+  background-color: #ffffffa0;
+  padding: 5px;
+  border: 1px solid #bbbbbb62;
+  width: 322px;
+  border-radius: 10px;
+  transition: transform 0.6s ease;
+}
+
+.pipeline:hover {
+  transform: scale(100.4%);
+  transition: background 0.5s;
+  background-color: #ffffff;
+}
+
+.pipeline-title-container {
+  display: flex;
+  align-items: center;              /* Center title vertically */
+  padding: 15px;
+  padding-right: 35px;             /* Add extra space for the circle */
+  box-sizing: border-box;          /* Ensure padding doesn't affect width */
+}
+
+.pipeline-title {
+  margin-top: 4px;
+  margin-left: 4px;
+  padding: 10px;
+  color: #202b42;
+  font-size: 14px;                  /* Adjust font size as needed */
+}
+
+.circle {
+  position: absolute;               /* Absolute positioning within the pipeline container */
+  top: 15px;                        /* Distance from the top */
+  right: 15px;                      /* Distance from the right */
+  width: 20px;                      /* Width of the circle */
+  height: 20px;                     /* Height of the circle */
+  background-color: #ffffff9c;        /* Circle background color */
+  border: 0.5px solid grey;         /* Circle border */
+  border-radius: 50%;               /* Makes the element a circle */
+  display: flex;                    /* Flexbox to center the number */
+  justify-content: center;          /* Center horizontally */
+  align-items: center;              /* Center vertically */
+  color: #a8a8a8;                   /* Text color */
+  font-size: 10px;                  /* Font size for the number */
+  font-weight: bold;                /* Bold number */
+}
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Theoflow.com</title>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar content remains unchanged -->
+    <!-- Logo & Product Name -->
+    <div class="sidebar-header">
+      <div class="logo">
+        <img src="Images/logo.png" id="sidebar-logo">
+      </div>
+      <div class="product-name">
+        <p id="workspace">Workspace</p>
+        <h2 id="theoflow-text">Theoflow.com</h2>
+      </div>
+      <img src="Images/dropdown-arrow.png" id="dropdown-arrow">
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav">
+      <a href="onboard.html" class="nav-link" onclick="loadPage(event, 'onboard.html')">
+        <img src="Images/onboard-icon.png" class="icon">
+        <span>Onboard</span>
+      </a>
+      <a href="clients.html" class="nav-link" onclick="loadPage(event, 'clients.html')">
+        <img src="Images/clients-icon.png" class="icon">
+        <span>Clients</span>
+      </a>
+      <a href="analytics.html" class="nav-link" onclick="loadPage(event, 'analytics.html')">
+        <img src="Images/analytics-icon.png" class="icon">
+        <span>Analytics</span>
+      </a>
+    </nav>
+
+    <!-- Support Section -->
+    <div class="support">
+      <a href="https://app.slack.com/client/T064P4W0UPJ/D063X7ECHLM" target="_blank" class="nav-link">
+        <img src="Images/helpcenter-icon.png" class="icon">
+        <span>Help Center</span>
+      </a>
+    </div>
+
+    <!-- Logout Button -->
+    <div class="logout">
+      <a href="#" class="nav-link">
+        <img src="Images/settings-icon.png" class="icon">
+        <span>Settings</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div id="content-area">
+    <!-- Default or initial content goes here -->
+  </div>
+
+  <!-- Placeholder for Modal Content -->
+  <div id="modal-placeholder"></div>
+
+  <!-- JavaScript File -->
+  <script src="index.js"></script>
+</body>
+</html>
